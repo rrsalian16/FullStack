@@ -1,0 +1,287 @@
+/* ############# Default ################ */
+nav, header, footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    font-size: 35px;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    line-height: 1;
+}
+article p{
+    font-size: 35px;
+    padding: 20px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1  {width: 8.33%};
+.col-2  {width: 16.66%;}
+.col-3  {width: 25%;}
+.col-4  {width: 33.33%;}
+.col-5  {width: 41.66%;}
+.col-6  {width: 50%;}
+.col-7  {width: 58.33%;}
+.col-8  {width: 66.66%;}
+.col-9  {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+h1.large {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 300px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+form h2 {
+    color: white;
+}
+
+.leftsidecol {
+    margin-left: 20%;
+}
+
+.righsidecol {
+    margin-left: 10%
+}
+
+div.box {
+    text-align: center;
+    margin: 24px;
+    border-radius: 12px;
+    padding:36px 24px 40px 24px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+div.icon img {
+    width: 25%;
+    height: 25%;
+}
+
+h1.sec2header {
+    font-size: 40px;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(60, 60, 233);
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+button.learnmore{
+    display: blcok;
+    margin: auto;
+}
+
+div.slopeicon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, .1),
+    2px 2px 4px 2px rgba(0, 0, 0, .3);
+}
+
+div.slopeicon {
+    margin: 10px;
+}
+
+footer.foot{
+    background-color: #666;
+    padding-left: 60px;
+}
+
+footer.foot h1{
+    color: white;
+    font-size: 35px;
+}
+footer.foot ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.foot ul li{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* ******* Nav Bar ******** */
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover{
+    background-color: #0080ff;
+    color: white;
+}
+
+ul.topnav li.dropdownicon{
+    display: none;
+}
+
+
+
+
+/* ****** Custom Style ******* */
+#section1-gradient{
+     /* Fallback (could use .jpg/.png alternatively) */
+     background: rgb(120, 29, 224);
+
+     /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+     background: -webkit-linear-gradient(left, #53a6eb, #ba6ce7);
+
+     /* Firefox 3.6 - 15 */
+     background: -moz-linear-gradient(left,#53a6eb, #ba6ce7);
+
+     /* Opera 11.1 - 12 */
+     background: -o-linear-gradient(left, #53a6eb, #ba6ce7);
+
+     /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+     background: linear-gradient(to right,#53a6eb, #ba6ce7);
+}
+
+/* ****** Mobile ****** */
+@media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownicon {
+        display: block;
+        float:right;
+    }
+    ul.topnav.responsive li.dropdownicon{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+
+    ul.topnav.responsive {
+        position:relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float:none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    .col-6, .col-4,.col-7,.col-5{
+        width: 100%;
+        margin: 0;
+    }
+
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    div.leftsidecol, div.righsidecol{
+        margin: 15px;
+    }
+    input[type="text"]{
+        width: 200px;
+    }
+    div.righsidecol{
+        margin: 0;
+    }
+
+    .video-container iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    h1.sec2header {
+        font-size: 30px;
+    }
+    h1.large{
+        font-size: 40px;
+    }
+    article p {
+        font-size: 25px;
+    }
+    div.slopeicon img{
+        width: 100%;
+    }
+
+    div.mobileStack{
+        width: 50%;
+    }
+    footer.foot {
+        padding-left: 30px;
+    }
+}

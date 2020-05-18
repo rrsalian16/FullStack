@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project1</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#singup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+
+            <li class="dropdownicon"><a href="javasrcipt:void(0);" onclick="dropdwonMenu()">&#9776</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <div class="container" id="section1-gradient">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="leftsidecol">
+                    <h1 class="large">Crazzy Radness</h1>
+                    <h1 class="large">Made for Developers</h1>
+                </div>
+                <form action="">
+                    <div class="leftsidecol">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="text" placeholder="password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="righsidecol">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IUN664s7N-c" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1 class="sec2header">The standard of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="logo.jpg" alt="logo">
+                    </div>
+                    <label>Chat with me</label>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="logo.jpg" alt="logo">
+                    </div>
+                    <label>Learn to code</label>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="logo.jpg" alt="logo">
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnmore">learn more</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        
+                    </p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slopeicon">
+                    <img src="img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <div class="row">
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function dropdwonMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // topnav -> responsive
+            }
+            else{
+                x.className="topnav"
+            }
+        }
+    </script>
+</body>
+
+</html>
