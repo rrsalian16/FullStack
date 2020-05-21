@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
@@ -9,7 +10,8 @@ html, body {
     margin: 0;
 }
 
-.navbar, .container {
+.navbar,
+.container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -21,7 +23,9 @@ html, body {
     padding: 10px;
 }
 
-.brand, .nav-link, a {
+.brand,
+.nav-link,
+a {
     text-transform: uppercase;
     color: #303137;
 }
@@ -41,7 +45,8 @@ html, body {
     list-style: none;
 }
 
-.topnav .nav-link, a {
+.topnav .nav-link,
+a {
     text-decoration: none;
     padding-left: 20px;
     font-size: 20px;
@@ -69,7 +74,8 @@ header {
     width: 100%;
 }
 
-.services, .contact-container {
+.services,
+.contact-container {
     background-color: #F1F3Fa;
     padding: 4rem 1rem;
 }
@@ -133,7 +139,7 @@ header {
     border: none;
     padding: .8rem 4rem;
     border-radius: 3px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
 }
 
 .section-header {
@@ -259,18 +265,3 @@ form label {
         justify-content: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
