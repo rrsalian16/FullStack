@@ -1,0 +1,12 @@
+{
+    "jshint.config": "",
+
+    "jshint.options": {
+        "esversion": 6
+    },
+    "jshint.exclude": {
+    
+    },
+    "jshint.excludePath": "",
+    
+}

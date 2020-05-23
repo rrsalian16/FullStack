@@ -99,7 +99,7 @@ a.btn:hover {
 
     ul.list.responsive li a.nav-icon {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
     }
