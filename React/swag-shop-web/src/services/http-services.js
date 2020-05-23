@@ -11,4 +11,4 @@ class HttpService{
     }
 }
 
-exprot default HttpService;
+export default HttpService ;

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(image1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+div.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul.list {
+    float: right;
+    list-style-type: none;
+
+}
+
+ul.list li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+
+ul.list li a {
+    text-decoration: none;
+    border: 1px solid #fff transparent;
+    color: #fff;
+    padding: 5px 10px;
+    transition: 0.5s ease;
+}
+
+ul.list li a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+img.logo {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+div.title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 5vw;
+}
+
+div.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: 0.6s ease;
+}
+
+a.btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.nav-icon {
+    display: none;
+}
+
+
+@media (max-width: 560px) {
+    ul.list li a{
+        display: none;
+    }
+
+    .list li a.nav-icon {
+        display: block;
+        position: relative;
+        float: right;
+    }
+
+    ul.list.responsive li a.nav-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.list.responsive li:nth-child(1) a{
+            margin-top: 10px;
+    }
+
+    /* ul.list.responsive {
+        position: relative;
+    } */
+
+    ul.list.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.list.responsive li a {
+        display: block;
+        text-align: right;
+    }
+
+    div.button{
+       
+    }
+
+    a.btn{
+        display: block;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+
+
+}
