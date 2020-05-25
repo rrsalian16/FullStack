@@ -7,7 +7,6 @@ class ProductCondensed extends Component {
 
     constructor(props){
         super(props);
-
         //Bind Function
         this.removeProduct=this.removeProduct.bind(this);
     }

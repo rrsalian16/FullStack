@@ -12,11 +12,8 @@ class App extends Component {
 
   constructor(props){
     super(props);
-
     this.state={products:[]};
-
     //Bind function
-
     this.loadData=this.loadData.bind(this);
     this.productList=this.productList.bind(this);
     this.loadData();

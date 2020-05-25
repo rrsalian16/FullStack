@@ -9,7 +9,6 @@ class Product extends Component {
 
     constructor(props){
         super(props);
-
         this.state={onWhishList:ds.itemOnWhshList()};
         //Bind Function
         this.onBtnClicked=this.onBtnClicked.bind(this);
@@ -22,7 +21,6 @@ class Product extends Component {
     componentWillUnmount() {
         ns.removeObserver(NOTIF_WHISHLIST_CHANGED, this);
     }
-
     onWhishListChanged(newWhishList){
         this.setState({onWhishList:ds.itemOnWhshList(this.props.product)})
     }
@@ -39,7 +37,6 @@ class Product extends Component {
 
     render() {
         var btnClass;
-
         if(this.state.onWhishList){
             btnClass="btn btn-danger"
         }
