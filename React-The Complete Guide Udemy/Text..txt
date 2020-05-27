@@ -1,0 +1,11 @@
+
+#npm install
+npm install -g create-react-app
+
+#create app
+create-react-app my-first-app --scripts-version 1.1.5
+
+cd my-first-app
+
+#run application
+npm start
