@@ -9,3 +9,10 @@ cd my-first-app
 
 #run application
 npm start
+
+
+#Radium : for inline style
+npm install --save radium
+
+#for Styled components
+npm install --save styled-components
