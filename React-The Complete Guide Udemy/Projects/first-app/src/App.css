@@ -2,9 +2,26 @@
   text-align: center;
 }
 
-.red{
-  color:red;
+.red {
+  color: red;
 }
-.bold{
+
+.bold {
   font-weight: bold;
+}
+
+
+.button {
+  background-color: blue;
+  color: white;
+  font: inherit;
+  border: 1px solid blue;
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: purple;
+  color: black;
 }
