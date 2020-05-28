@@ -11,7 +11,7 @@
 }
 
 
-.button {
+.App button {
   background-color: blue;
   color: white;
   font: inherit;
@@ -21,7 +21,14 @@
 }
 
 
-.button:hover {
+.App button:hover {
   background-color: purple;
   color: black;
+}
+
+.App button.Aqua {
+  background-color: aquamarine;
+}
+.App button.Aqua:hover {
+  background-color: tomato;
 }

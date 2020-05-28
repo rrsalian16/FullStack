@@ -1,8 +1,6 @@
 import React, { Component, useState } from "react";
-import "./App.css";
-import Styled from "styled-components";
+import classes from "./App.module.css";
 import Person from "./Person/Person";
-
 
 
 /* Class Based Component */
@@ -42,21 +40,10 @@ class App extends Component {
   };
 
   render() {
-    // InlineStle :
-    /* const style = {
-      backgroundColor: "blue",
-      color: "white",
-      font: "inherit",
-      border: "1px solid blue",
-      padding: "8px",
-      cursor: "pointer",
-      ":hover": {
-        backgroundColor: "lightgreen",
-        color: "black",
-      },
-    };
- */
+   
     let persons = null;
+    let buttonClass="";
+
     if (this.state.showPersons) {
       persons = (
         <div>
@@ -73,70 +60,29 @@ class App extends Component {
           })}
         </div>
       );
-      /* style.backgroundColor = "red";
-      style[":hover"] = {
-        backgroundColor: "yellow",
-        color: "black",
-      }; */
+      buttonClass=classes.Aqua;
     }
 
-    let classes = [];
+    let assignedClasses = [];
     if (this.state.persons.length <= 2) {
-      classes.push("red");
+      assignedClasses.push(classes.red);
     }
     if (this.state.persons.length <= 1) {
-      classes.push("bold");
+      assignedClasses.push(classes.bold);
     }
 
     return (
-      <div className="App">
+      <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
-        <p className={classes.join(" ")}>This is really working !!!</p>
-        <button className='button' onClick={this.togglePersonHandler}>
+        <p className={assignedClasses.join(' ')}>This is really working !!!</p>
+        <button className={buttonClass} onClick={this.togglePersonHandler}>
           Toggle Person
         </button>
         {persons}
       </div>
     );
-
-    // Above return is conver to below return internally
-    // return React.createElement('div', {className:'App'}, React.createElement('h1',null, 'Hi, I\'m a React App'));
   }
 }
 
 export default App;
 
-/* Function Based Component -Functional Component */
-/* const app = props => {
-
-  const[personsState, setPersonsState]= useState({
-    persons: [
-      { name: "Rakshith", age: "23" },
-      { name: "Rohith", age: "24" },
-      { name: "Pratheek", age: "25" }
-    ]
-  });
-
-   let switchNameHandler = () => {
-    setPersonsState({
-      persons: [
-        { name: "Rakshith R Salian", age: "23" },
-        { name: "Rohith", age: "24" },
-        { name: "Pratheek", age: "25" }
-      ]
-    });
-  };
-
-    return (
-      <div className="App">
-        <h1>Hi, I'm a React App</h1>
-        <p>This is really working !!!</p>
-        <button onClick={switchNameHandler}>Switch Name</button>
-        <Person name={personsState.persons[0].name} age={personsState.persons[0].age} />
-        <Person name={personsState.persons[1].name} age={personsState.persons[1].age} >My Hobbies:Racing</Person>
-        <Person name={personsState.persons[2].name} age={personsState.persons[2].age} />
-      </div>
-    );
-}
-
-export default app; */
