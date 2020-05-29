@@ -1,8 +1,10 @@
 import React, { Component} from "react";
+
 import classes from "./App.module.css";
 import Persons from "../components/Persons/Persons";
 import Cockpit from '../components/Cockpit/Cockpit';
 import WithClass from '../hoc/WithClass';
+import AuthContext from '../context/auth-context';
 
 /* Class Based Component */
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
       { id: "hfg234n", name: "Pratheek", age: "25" },
     ],
     showPersons: false,
+    authenticated:false
   };
 
   static getDerivedStateFromProps(props,state){
@@ -59,6 +62,10 @@ class App extends Component {
     this.setState({ persons: persons });
   };
 
+  logInHandler=()=>{
+    this.setState({authenticated:true})
+  }
+
   render() {
 
     console.log("[App.js] render()")
@@ -75,12 +82,19 @@ class App extends Component {
 
     return (
       <WithClass classes={classes.App}>
+        < AuthContext.Provider value = {
+            {authenticated: this.state.authenticated,
+              login: this.logInHandler
+            }
+        } >
+        
         <Cockpit
         showPersons={this.state.showPersons}
         persons={this.state.persons}
         clicked={this.togglePersonHandler}
         />
         {persons}
+        </AuthContext.Provider>
       </WithClass>
     );
   }
