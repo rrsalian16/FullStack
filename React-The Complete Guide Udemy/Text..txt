@@ -16,3 +16,7 @@ npm install --save radium
 
 #for Styled components
 npm install --save styled-components
+
+#For http
+npm install axios --save
+
