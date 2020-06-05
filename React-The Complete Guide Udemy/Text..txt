@@ -23,3 +23,6 @@ npm install axios --save
 #for routing
 npm install react-router react-router-dom --save
 
+#Redux
+npm install redux --save
+
