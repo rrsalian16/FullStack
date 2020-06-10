@@ -26,3 +26,8 @@ npm install react-router react-router-dom --save
 #Redux
 npm install redux --save
 
+#React Redux
+npm install react-redux --save
+
+#Redux thunk
+npm install redux-thunk --save
